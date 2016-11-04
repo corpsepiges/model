@@ -92,10 +92,10 @@ public class SugerDynasty {
             int scX=sugerCenterList.get(i)[0];
             int scY=sugerCenterList.get(i)[1];
             double range=Math.pow(x-scX, 2)+Math.pow(y-scY, 2);
-            double test=Math.pow(range+1.1, rangeMetaphysics);
-            sum=1/test;
+            double test=1-1/Math.pow(range+1.1, rangeMetaphysics);
+            sum+=1/test;
         }
-        return sum;
+        return 1-1/sum;
     }
     /**
      * 清空棋盘上的糖

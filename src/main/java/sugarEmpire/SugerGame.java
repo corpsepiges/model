@@ -10,10 +10,10 @@ public class SugerGame {
     Random r;
     public static void main(String[] args) {
         long l=new Date().getTime();
-        int x=500;
-        int y=500;
+        int x=50;
+        int y=50;
         int sugerCenterNum=2;
-        int peopleNum=2000;
+        int peopleNum=200;
         int round=1000;
         new SugerGame().startGame(x, y, sugerCenterNum, peopleNum,round);
         System.out.println("棋盘规格："+x+"*"+y+";糖人数量："+peopleNum+";回合数："+round+";耗时："+(new Date().getTime()-l));
